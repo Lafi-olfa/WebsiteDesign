@@ -1,0 +1,174 @@
+@media screen {
+    *{
+        margin: 0;
+        padding: 0;
+    
+        }
+        body{
+            background-image: 
+            linear-gradient(rgb(0, 0, 0,0.75), rgb(0, 0, 0,0.75)),
+            url('images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            overflow-x: hidden; 
+            overflow-y: hidden; 
+
+    
+            }
+           
+        nav{
+            background-color:transparent;
+            align-items: center;
+            justify-content:space-around;
+            display: flex;
+            width: 100%;
+            padding: 0px 35px;
+            height: 50px;
+            align-items:center ;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+           /* text-transform: capitalize;*/
+             }
+             nav ul li{
+                color: #ffb600;
+        
+                word-spacing: 3px;
+                letter-spacing: 2px;
+                display: inline;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+            nav ul li:hover{
+                color:#ffb5a7;
+                word-spacing: 3px;
+               
+                letter-spacing: 2px;
+                display: inline;
+                text-transform: uppercase;
+                font-size: 30px;
+                cursor: pointer;
+            }
+
+            .logo{
+                color: #ffb600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: 30px;
+                cursor: pointer;
+        
+            }
+            @keyframes jello-diagonal-1{0%{transform:skew(0deg 0deg)}30%{transform:skew(25deg 25deg)}40%{transform:skew(-15deg,-15deg)}50%{transform:skew(15deg,15deg)}65%{transform:skew(-5deg,-5deg)}75%{transform:skew(5deg,5deg)}100%{transform:skew(0deg 0deg)}}     
+               .logo:hover{
+                animation-name: jello-diagonal-1;
+                animation-duration: 3s;
+    
+                color: #ffb600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: 30px;
+        
+            }
+          /*  .text h2{
+                color: white;
+                font-size: 30px;
+                text-transform: uppercase;
+                left: 50%;
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                top: 50%;
+                letter-spacing: 1px;
+                word-wrap: 3px;
+    
+            }
+            p{
+                color: white;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                word-spacing: 3px;
+            }
+            */
+            .main{
+                width: 100%;
+                position:absolute;
+                top: 50%;
+                text-align: center;
+                transform: translateY(-30%);
+                color: white;
+
+            }
+         .text h2{
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: #ffb5a7;
+                font-size: 60px;
+                 font-family: 'Poppins', sans-serif;
+                ;
+            }
+            .text h2:hover{
+                text-transform: uppercase;
+                animation-name:  vibrate-1;
+                animation-duration: 1s;
+                animation-delay:2s ;
+                animation-iteration-count: 10;
+                animation-direction:reverse;
+            }
+            .text h2 span{
+                color: #ffb600;
+            }
+            .main p{
+                margin: 2px auto;
+                font-family: 'Roboto', sans-serif;
+                line-height: 25px;
+                font-weight: 100;    
+                text-transform: capitalize;
+                    }
+            .button{
+                width:200px;
+                padding: 15px 0;
+                text-align: center;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                border: 2px solid rgb(201, 177, 177);
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+            }
+            .span{
+                background:#a7cfcb;
+                height: 100%;
+                width: 100%;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: 0.5s
+            }
+            button:hover span{
+                width: 100%;
+                color: #ffb600;
+                text-transform: uppercase;
+               
+            }
+            .button:hover {
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: capitalize;
+            animation-name:  scale-up-bottom;
+            animation-duration: 1s;
+                animation-delay:1s ;
+                animation-iteration-count: 10;
+                animation-direction:alternate;
+
+            border: 2px solid rgb(201, 177, 177);
+            
+        }
+        @keyframes scale-up-bottom{0%{transform:scale(.5);transform-origin:50% 100%}100%{transform:scale(1);transform-origin:50% 100%}}
+        @keyframes bounce-bottom{0%{-webkit-transform:translateY(45px);transform:translateY(45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(24px);transform:translateY(24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(12px);transform:translateY(12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(6px);transform:translateY(6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-bottom{0%{-webkit-transform:translateY(45px);transform:translateY(45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(24px);transform:translateY(24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(12px);transform:translateY(12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(6px);transform:translateY(6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
+        @keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+        @keyframes flip-vertical-fwd{0%{transform:translateZ(0) rotateY(0)}100%{transform:translateZ(160px) rotateY(180deg)}}
+    }
